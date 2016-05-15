@@ -19,7 +19,7 @@ npm install -g bower-sinopia-proxy
   "sinopia-proxy-config": {
     "server": "http://registry.npmjs.org",
     "scopes": {
-      "test": "http://localhost:4873"
+      "local": "http://localhost:4873"
     }
   }
 }
@@ -29,8 +29,8 @@ npm install -g bower-sinopia-proxy
 ```
 ...
 "dependencies": {
-  "@test/backbone": "~1.3.3",
-  "@test/underscore": "~1.8.3",
+  "@local/backbone": "~1.3.3",
+  "@local/underscore": "~1.8.3",
   "localforage": "~1.4.0",
   "is_js": "~0.7.6"
 }

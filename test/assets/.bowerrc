@@ -2,5 +2,11 @@
   "directory": "/tmp/bower/",
   "resolvers": [
     "bower-sinopia-proxy"
-  ]
+  ],
+  "sinopia-proxy-config": {
+    "server": "http://registry.npmjs.org",
+    "scopes": {
+      "local": "http://localhost:4873"
+    }
+  }
 }

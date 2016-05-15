@@ -7,8 +7,7 @@
   "description": "",
   "dependencies": {
     "underscore": "1.8.0",
-    "@npm/jquery.cookie": "~1.4.x"
+    "@local/jquery.cookie": "~1.4.x"
   },
-  "main": "",
   "license": "MIT"
 }
