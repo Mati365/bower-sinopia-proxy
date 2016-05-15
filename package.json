@@ -1,11 +1,16 @@
 {
   "name": "bower-sinopia-proxy",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple sinopia bower resolver",
   "main": "dist/resolver",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/Mati365/bower-sinopia-proxy.git"
+  },
+  "homepage": "https://github.com/Mati365/bower-sinopia-proxy#readme",
   "keywords": [
     "bower",
     "sinopia",
