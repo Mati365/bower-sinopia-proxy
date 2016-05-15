@@ -36,6 +36,11 @@ npm install -g bower-sinopia-proxy
 }
 ...
 ```
+
+## Known issues
+- After installing `2.2.3` version of `JQuery` from `NPM` servers, `Bower` generates only blank folder.
+- Some packages are called different than in `Bower` e.g. `html.sortable` is called `html5sortable` in `NPM` package 
+
 ## License
 The MIT License (MIT)
 
