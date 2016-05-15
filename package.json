@@ -26,6 +26,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-mocha": "^2.2.0",
     "mocha": "^2.4.5",
+    "request": "^2.72.0",
     "run-sequence": "^1.1.5",
     "tmp": "0.0.28"
   },
