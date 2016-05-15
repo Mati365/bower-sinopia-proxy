@@ -9,35 +9,43 @@ describe('Sinopia Bower Proxy', function() {
 
     var proxy = null;
     beforeEach(function() {
-      proxy = resolver({});
+      proxy = resolver({}, {
+          server: 'http://localhost:4873'
+        , scopes: {
+          'test': 'http://registry.npmjs.org'
+        }
+      });
     });
 
     describe('#match', function() {
-      beforeEach(function() {
-        proxy.config = {
-          scopes: {}
-        };
-      });
-
       it('matches scopes list', function() {
-        proxy.config = {
-          scopes: {
-            'npm': 'http://localhost:4873/'
-          }
-        };
-        expect(proxy.match('@npm/jquery')).to.be.true;
-        expect(proxy.match('jquery')).to.be.false;
+        expect(proxy.match('@test/jquery')).to.be.true;
+        expect(proxy.match('jquery')).to.be.true;
       });
 
       it('matches without scopes list', function() {
-        expect(proxy.match('@npm/jquery')).to.be.true;
+        proxy.config.scopes = {};
+
+        expect(proxy.match('@test/jquery')).to.be.true;
         expect(proxy.match('jquery')).to.be.true;
+      });
+    });
+
+    describe('#releases', function() {
+      it('find release', function() {
+        // proxy.releases('@test/jquery').then(function(d) {
+        //   console.log(d);
+        // });
+        // expect(proxy.locate('@test/jquery')).to.be.equal({
+        //     name: 'jquery'
+        //   , packageInfo: ''
+        // });
       });
     });
 
     it('installs npm module', function() {
       var bower = exec('bower install --force', {
-        cwd: 'test/assets/'
+        cwd: __dirname + '/assets/'
       });
       bower.stdout.on('data', function(data) {
         console.log(data);
