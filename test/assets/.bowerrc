@@ -1,5 +1,5 @@
 {
-  "directory": "/tmp/bower",
+  "directory": "./bower_data/",
   "resolvers": [
     "bower-sinopia-proxy"
   ]
