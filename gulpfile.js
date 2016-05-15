@@ -29,7 +29,8 @@ gulp
     return gulp
       .src('lib/**/*')
       .pipe(babel({
-        presets: ['es2015']
+          presets: ['es2015']
+        , plugins: ['add-module-exports']
       }))
       .pipe(gulp.dest('dist'));
   })

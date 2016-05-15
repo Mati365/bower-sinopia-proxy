@@ -1,0 +1,14 @@
+{
+  "name": "app-test",
+  "homepage": "https://github.com/Mati365/bower-sinopia-proxy",
+  "authors": [
+    "Mateusz Bagiński <cziken58@gmail.com>"
+  ],
+  "description": "",
+  "dependencies": {
+    "almond": "~0.2.1",
+    "jquery": "~1.8.2"
+  },
+  "main": "",
+  "license": "MIT"
+}

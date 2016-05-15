@@ -32,7 +32,10 @@
     "no-multi-spaces": 2,
     "no-redeclare": 2,
     "no-unused-vars": [2, { "vars": "all", "args": "none" }],
-    "quotes": [2, "single", "avoid-escape"]
+    "quotes": [2, "single",  {
+      "avoidEscape": true,
+      "allowTemplateLiterals": true
+    }]
   },
   "parserOptions": {
     "sourceType": "module"

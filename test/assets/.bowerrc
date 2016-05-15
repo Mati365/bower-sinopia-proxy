@@ -1,0 +1,6 @@
+{
+  "directory": "/tmp/bower",
+  "resolvers": [
+    "bower-sinopia-proxy"
+  ]
+}
