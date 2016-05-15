@@ -1,4 +1,4 @@
-# bower-npm-proxy
+# bower-sinopia-proxy
 [![npm](https://img.shields.io/npm/v/bower-sinopia-proxy.svg?style=flat)](https://www.npmjs.com/package/bower-sinopia-proxy)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](http://opensource.org/licenses/MIT)
 
